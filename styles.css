@@ -552,9 +552,12 @@ textarea:focus-visible {
         padding: 40px 0;
     }
 
-    .photo-gallery,
-    .project-grid {
+    .photo-gallery {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .footer-columns {
@@ -598,8 +601,7 @@ textarea:focus-visible {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .photo-gallery,
-    .project-grid {
+    .photo-gallery {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
