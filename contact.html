@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="logo" href="index.html">Antony Shisia</a>
+            <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu" aria-controls="main-navigation">
+            <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="primary-nav" id="main-navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page-container">
+        <h1>Contact Me</h1>
+        <p>Fields marked with <span aria-hidden="true">*</span> are required.</p>
+
+        <div class="contact-layout">
+            <section class="contact-form-panel" aria-label="Contact form">
+                <!-- Replace YOUR_FORM_ID with the ID from your Formspree form endpoint -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <p>
+                            <label for="full-name">Full Name <span aria-hidden="true">*</span></label><br>
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="full_name"
+                                placeholder="e.g. Good Day"
+                                autocomplete="name"
+                                required>
+                        </p>
+                        <p>
+                            <label for="email">Email <span aria-hidden="true">*</span></label><br>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="e.g. goodday@example.com"
+                                autocomplete="email"
+                                required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone (optional)</label><br>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="e.g. +254 700 000000"
+                                autocomplete="tel">
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <p>
+                            <label for="subject">Subject</label><br>
+                            <select id="subject" name="subject">
+                                <option value="general">General inquiry</option>
+                                <option value="support">Support</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="message">Message <span aria-hidden="true">*</span></label><br>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                cols="40"
+                                minlength="50"
+                                placeholder="Write your message here (at least 50 characters)"
+                                aria-describedby="message-hint"
+                                required></textarea>
+                            <br>
+                            <small id="message-hint">Minimum 50 characters.</small>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Subscribe to the newsletter</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Send Message</button>
+                    </p>
+                </form>
+            </section>
+            <aside class="contact-sidebar">
+                <h2>Get in touch</h2>
+                <p>Have a question or want to discuss a project? Send a message using the form, or email me directly.</p>
+                <p><a href="mailto:antonyshioni03@gmail.com">antonyshioni03@gmail.com</a></p>
+                <h3>Areas of interest</h3>
+                <ul>
+                    <li>Logistics and supply chain</li>
+                    <li>Human rights advocacy</li>
+                    <li>Peace-building and community work</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <section aria-labelledby="footer-about-title">
+                <h2 id="footer-about-title">About</h2>
+                <p>Logistics professional passionate about human rights, peace-building, and learning web development.</p>
+            </section>
+            <nav aria-labelledby="footer-links-title">
+                <h2 id="footer-links-title">Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <section aria-labelledby="footer-contact-title">
+                <h2 id="footer-contact-title">Contact</h2>
+                <p><a href="mailto:antonyshioni03@gmail.com">antonyshioni03@gmail.com</a></p>
+            </section>
+        </div>
+        <p class="copyright">&copy; 2026 Antony Shisia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
